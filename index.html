@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krutik Patel - Full-Stack Developer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="bg-animation"></div>
+
+    <nav>
+        <div class="nav-container">
+            <div class="logo">AC</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="theme-toggle" class="theme-toggle">🌙</button>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+        
+        <div class="hero-content">
+            <div class="hero-subtitle">Full-Stack Developer</div>
+            <h1 class="hero-title">Krutik Patel</h1>
+            <p class="hero-description">
+                Crafting digital experiences that blend innovation with beauty. 
+                Specializing in modern web development and user interface design.
+            </p>
+            <button class="cta-button" onclick="document.getElementById('contact').scrollIntoView()">
+                Let's Work Together
+            </button>
+        </div>
+    </section>
+
+    <section id="about" class="fade-in">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-image">👨‍💻</div>
+            <div class="about-text">
+                <p>Hello! I'm Alex, a passionate full-stack developer with 5+ years of experience creating digital solutions that make a difference. My journey in tech began with a curiosity about how things work and evolved into a love for building products that solve real problems.</p>
+                <p>I specialize in modern JavaScript frameworks, cloud technologies, and creating seamless user experiences. When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or sharing knowledge with the developer community.</p>
+                <p>I believe in the power of clean code, thoughtful design, and continuous learning. Every project is an opportunity to push boundaries and create something exceptional.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="fade-in">
+        <h2 class="section-title">Skills & Expertise</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-icon">🌐</div>
+                <h3 class="skill-title">Frontend Development</h3>
+                <p>React, Vue.js, TypeScript, Next.js, Tailwind CSS, Modern JavaScript</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">⚙</div>
+                <h3 class="skill-title">Backend Development</h3>
+                <p>Node.js, Python, Express, Django, RESTful APIs, GraphQL</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">☁</div>
+                <h3 class="skill-title">Cloud & DevOps</h3>
+                <p>AWS, Docker, Kubernetes, CI/CD, Microservices, Serverless</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">🗄</div>
+                <h3 class="skill-title">Database & Storage</h3>
+                <p>PostgreSQL, MongoDB, Redis, Elasticsearch, Data Modeling</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">🎨</div>
+                <h3 class="skill-title">UI/UX Design</h3>
+                <p>Figma, Adobe Creative Suite, Prototyping, User Research</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">📱</div>
+                <h3 class="skill-title">Mobile Development</h3>
+                <p>React Native, Flutter, Progressive Web Apps, Cross-platform</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="fade-in">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="filter-controls">
+            <button class="filter-btn" data-tech="all">All</button>
+            <button class="filter-btn" data-tech="React">React</button>
+            <button class="filter-btn" data-tech="Vue.js">Vue.js</button>
+            <button class="filter-btn" data-tech="Node.js">Node.js</button>
+            <button class="filter-btn" data-tech="Python">Python</button>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card" data-tech="React Node.js MongoDB Stripe">
+                <div class="project-image">🚀</div>
+                <div class="project-content">
+                    <h3 class="project-title">E-Commerce Platform</h3>
+                    <p class="project-description">
+                        A full-stack e-commerce solution with real-time inventory management, 
+                        payment processing, and analytics dashboard. Built for scalability and performance.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">Stripe</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-tech="Vue.js Python PostgreSQL">
+                <div class="project-image">📊</div>
+                <div class="project-content">
+                    <h3 class="project-title">Data Visualization Dashboard</h3>
+                    <p class="project-description">
+                        Interactive dashboard for real-time data analysis with custom charts, 
+                        filters, and export capabilities. Handles millions of data points efficiently.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Vue.js</span>
+                        <span class="tech-tag">D3.js</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-tech="Next.js Redis">
+                <div class="project-image">🤖</div>
+                <div class="project-content">
+                    <h3 class="project-title">AI-Powered Chat Application</h3>
+                    <p class="project-description">
+                        Real-time chat application with AI-powered features including smart replies, 
+                        language translation, and sentiment analysis.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Next.js</span>
+                        <span class="tech-tag">Socket.io</span>
+                        <span class="tech-tag">OpenAI</span>
+                        <span class="tech-tag">Redis</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="fade-in">
+        <div class="contact-content">
+            <h2 class="section-title">Let's Connect</h2>
+            <p style="font-size: 1.2rem; color: var(--text-secondary); margin-bottom: 2rem;">
+                Ready to bring your ideas to life? I'm always excited to work on new projects and collaborate with amazing people.
+            </p>
+            <form class="contact-form">
+                <div class="form-row">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <input type="text" placeholder="Subject" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <button id="scroll-to-top" class="scroll-to-top">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
